@@ -31,5 +31,10 @@ public class Hoofdletters {
         curstomerNames.add("henk den hartog");
         curstomerNames.add("mo el-mecky");
         curstomerNames.add("fredje kadetje");
+
+        System.out.print(curstomerNames.get(1).toUpperCase());
+        String output = curstomerNames.get(0).substring(0, 1).toUpperCase() + curstomerNames.get(0).substring(1);
+        System.out.println("\n" + output);
     }
+
 }

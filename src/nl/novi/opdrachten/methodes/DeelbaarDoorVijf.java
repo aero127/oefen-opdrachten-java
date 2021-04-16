@@ -9,7 +9,17 @@ package nl.novi.opdrachten.methodes;
  */
 public class DeelbaarDoorVijf {
 
-    public static void main(String[] sammieKijkOmhoog) {
-        int chosenNumber = 44;
+    public static void main(String[] args) {
+        int chosenNumber = 48;
+        checkAnswer(chosenNumber);
+    }
+
+    private static void checkAnswer(int chosenNumber) {
+        if(chosenNumber % 5 == 0){
+            System.out.println("Het getal is deelbaar door 5!");
+        } else if (chosenNumber % 5 != 0){
+            System.out.println("Het getal is niet deelbaar door 5!");
+        }
+
     }
 }

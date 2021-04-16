@@ -24,4 +24,22 @@ package nl.novi.opdrachten.methodes;
  */
 
 public class DeelbaarDoorX {
+
+    public static void main(String[] args) {
+        int number = 14;
+        int divisble = 3;
+        checkAnswer(number, divisble);
+    }
+
+    private static void checkAnswer(int number, int divisble) {
+        if (number % divisble == 0) {
+            System.out.println("Het getal " + number + " is WEL deelbaar door " + divisble);
+        } else if (number % divisble == 1) {
+            System.out.println("Het getal " + number + " is NIET deelbaar door " + divisble);
+            System.out.println("Verlaag je getal met 1");
+        } else if(number % divisble == 2) {
+            System.out.println("Het getal " + number + " is NIET deelbaar door " + divisble);
+            System.out.println("Verhoog je getal met 1");
+        }
+    }
 }

@@ -26,7 +26,21 @@ public class SorteerLijst {
 
         List<Integer> wrongList = new ArrayList<>(Arrays.asList(1, 2, 4, 5, 6, 7, 8));
         List<Integer> correctList = new ArrayList<>(Arrays.asList(88, 888, 909909));
-
+        List<Integer> inputList = correctList;
+        sizeCheck(inputList);
     }
 
+    public static void sizeCheck(List<Integer> inputList) {
+        if(inputList.size()>3 ){
+            System.out.println("Er zijn te veel getallen in de lijst");
+        } else if(inputList.size()<3 ) {
+            System.out.println("Er zijn te weinig getallen in de lijst");
+        } else if(inputList.size()== 3 ){
+            System.out.println(inputList);
+        }
+
+
+    }
 }
+
+

@@ -8,7 +8,15 @@ public class Leeftijdscontrole {
 
         System.out.println("Wat is uw leeftijd?");
         int givenAge = userInputScanner.nextInt();
-
+        if(givenAge < 18){
+            System.out.println("Je bent nog te jong om drank te kopen!");
+        }
+        else if(givenAge >= 18 && givenAge <25){
+            System.out.println("Je mag wel drank kopen, maar je moet je ID laten zien");
+        }
+        else if(givenAge >= 25){
+            System.out.println("Jij mag drank kopen, lekker zuipuhhh!");
+        }
         /*
         In Nederland mag je alcoholische dranken kopen vanaf je 18e. Je moet echter tot je 25ste een ID kunnen tonen.
         Hierboven heeft de gebruiker al zijn leeftijd ingevoerd. Het is aan jou om de volgende berichten af te drukken:

@@ -7,6 +7,11 @@ public class OnevenTeller {
         Deze while-lus moet net zo lang lopen tot en met de teller op 10 staat.
         Print alleen de oneven getallen uit!
          */
-        int teller = 0;
+        int teller = 1;
+        System.out.println("Dit zijn de oneven nummers t/m 10");
+        while (teller <=10){
+            System.out.println(teller);
+            teller = (teller+=2);
+        }
     }
 }
